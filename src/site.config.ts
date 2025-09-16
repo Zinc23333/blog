@@ -9,7 +9,7 @@ export const theme: ThemeUserConfig = {
   /** Description metadata for your website. Can be used in page metadata. */
   description: 'Stay hungry, stay foolish',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
-  // favicon: '/favicon/favicon.ico',
+  favicon: '/favicon/favicon.ico',
   /** Specify the default language for this site. */
   locale: {
     lang: 'en-US',
@@ -23,10 +23,10 @@ export const theme: ThemeUserConfig = {
     }
   },
   /** Set a logo image to show in the homepage. */
-  logo: {
-    src: 'src/assets/avatar.png',
-    alt: 'Avatar'
-  },
+  // logo: {
+  //   src: 'src/assets/avatar.png',
+  //   alt: 'Avatar'
+  // },
 
   // === Global configuration ===
   titleDelimiter: '•',
