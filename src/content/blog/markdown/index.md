@@ -41,12 +41,12 @@ _Italic text_ and **Bold text**, together will be **_Bold Italic text_**
 ### Links
 
 ```markdown
-Text link [Link Name](http://link-url)
+Text link [Link Name](https://link-url)
 ```
 
 Preview:
 
-Text link [Link Name](http://link-url)
+Text link [Link Name](https://link-url)
 
 ### Inline Code
 

@@ -14,7 +14,7 @@ const WINDOWS_PATH_REGEX = /^[a-zA-Z]:\\/
  * ```
  * import isAbsoluteUrl from 'is-absolute-url';
  *
- * isAbsoluteUrl('http://sindresorhus.com/foo/bar');
+ * isAbsoluteUrl('https://sindresorhus.com/foo/bar');
  * //=> true
  *
  * isAbsoluteUrl('//sindresorhus.com');
