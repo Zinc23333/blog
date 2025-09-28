@@ -18,9 +18,9 @@ const socialImageURL = new URL(ogImage ? ogImage : '/images/social-card.png', As
 <title>{siteTitle}</title>
 
 {/* Icons / Favicon */}
-<link rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon.png' />
-<link rel='icon' type='image/png' sizes='32x32' href='/favicon/favicon-32x32.png' />
-<link rel='icon' type='image/png' sizes='16x16' href='/favicon/favicon-16x16.png' />
+<link rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon.webp' />
+<link rel='icon' type='image/png' sizes='32x32' href='/favicon/favicon-32x32.jpg' />
+<link rel='icon' type='image/png' sizes='16x16' href='/favicon/favicon-16x16.jpg' />
 <link rel='manifest' href='/favicon/site.webmanifest' />
 
 {/* Font preloads */}
@@ -88,11 +88,5 @@ const socialImageURL = new URL(ogImage ? ogImage : '/images/social-card.png', As
 
 {
   /* User script*/
-  prod && (
-    <script>
-      console.log( '%c Astro Theme Pure %c https://github.com/cworld1/astro-theme-pure/',
-      'color:#fff;background:linear-gradient(90deg,#448bff,#44e9ff);padding:5px 0;',
-      'color:#000;background:linear-gradient(90deg,#44e9ff,#ffffff);padding:5px 10px 5px 0px;' )
-    </script>
-  )
+  // prod
 }

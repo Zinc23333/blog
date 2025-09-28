@@ -23,10 +23,10 @@ export const theme: ThemeUserConfig = {
     }
   },
   /** Set a logo image to show in the homepage. */
-  // logo: {
-  //   src: 'src/assets/avatar.png',
-  //   alt: 'Avatar'
-  // },
+  logo: {
+    src: 'src/assets/avatar.webp',
+    alt: 'Avatar'
+  },
 
   // === Global configuration ===
   titleDelimiter: '•',
@@ -34,14 +34,14 @@ export const theme: ThemeUserConfig = {
   npmCDN: 'https://cdn.jsdelivr.net/npm',
 
   // Still in test
-  head: [
-    /* Telegram channel */
-    // {
-    //   tag: 'meta',
-    //   attrs: { name: 'telegram:channel', content: '@cworld0_cn' },
-    //   content: ''
-    // }
-  ],
+  // head: [
+  //   /* Telegram channel */
+  //   {
+  //     tag: 'meta',
+  //     attrs: { name: 'telegram:channel', content: '@cworld0_cn' },
+  //     content: ''
+  //   }
+  // ],
   customCss: [],
 
   /** Configure the header of your site. */
@@ -62,11 +62,11 @@ export const theme: ThemeUserConfig = {
     // year: `© 2019 - ${new Date().getFullYear()}`,
     links: [
       // Registration link
-      // {
-      //   title: 'Moe ICP 114514',
-      //   link: 'https://icp.gov.moe/?keyword=114514',
-      //   style: 'text-sm' // Uno/TW CSS class
-      // },
+      {
+        title: '苏ICP备2025209618号-1',
+        link: 'https://beian.miit.gov.cn',
+        style: 'text-sm' // Uno/TW CSS class
+      },
       // {
       //   title: 'Travelling',
       //   link: 'https://www.travellings.cn/go.html',
@@ -82,7 +82,7 @@ export const theme: ThemeUserConfig = {
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: true,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/cworld1/astro-theme-pure' }
+    social: { github: 'https://github.com/zinc23333' }
   },
 
   content: {
@@ -155,7 +155,8 @@ export const integ: IntegrationUserConfig = {
   waline: {
     enable: false,
     // Server service link
-    server: 'https://astro-theme-pure-waline.arthals.ink/',
+    server: '',
+    // server: 'https://astro-theme-pure-waline.arthals.ink/',
     // Refer https://waline.js.org/en/guide/features/emoji.html
     emoji: ['bmoji', 'weibo'],
     // Refer https://waline.js.org/en/reference/client/props.html
