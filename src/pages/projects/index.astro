@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 
-import { Button, Collapse, Icon } from 'astro-pure/user'
+import { Button, Collapse, Icon, Svg } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
 import ProjectSection from '@/components/projects/ProjectSection.astro'
 import Sponsors from '@/components/projects/Sponsors.astro'
@@ -20,12 +20,19 @@ const headings = [
 <PageLayout title='项目' {headings} view>
   <h3 id='activities'>Github Activities</h3>
   <p>
-    <Image
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://file.cdn.zinc233.top/imgs/common/github-contribution-grid-snake-dark.svg">
+      <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://file.cdn.zinc233.top/imgs/common/github-contribution-grid-snake.svg">
+      <img src="https://file.cdn.zinc233.top/imgs/common/github-contribution-grid-snake.svg" 
+          alt="github activities" 
+          loading="lazy">
+    </picture>
+    <!-- <Image
       src='https://file.cdn.zinc233.top/imgs/common/github-contribution-grid-snake.svg'
       alt='github activities'
       inferSize
       loading='lazy'
-    />
+    /> -->
   </p>
   <!-- <p>
     If you think it would be useful or interesting to collaborate on a project, you can donate to
