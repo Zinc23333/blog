@@ -6,17 +6,18 @@ import PageLayout from '@/layouts/CommonPage.astro'
 import ProjectSection from '@/components/projects/ProjectSection.astro'
 import Sponsors from '@/components/projects/Sponsors.astro'
 import Sponsorship from '@/components/projects/Sponsorship.astro'
-import alipay from '@/assets/alipay-qrcode.jpg'
+import alipay from '@/assets/alipay-qrcode.webp'
 import KeyIcon from '@/assets/icons/key.svg'
-import wechat from '@/assets/wechat-qrcode.jpg'
+import wechat from '@/assets/wechat-qrcode.webp'
 
 const headings = [
   { depth: 2, slug: 'activities', text: 'Github Activities' },
   { depth: 2, slug: 'front', text: '前端小项目' },
+  { depth: 2, slug: 'sponsorship', text: '捐赠' },
 ]
 ---
 
-<PageLayout title='Projects' {headings} view>
+<PageLayout title='项目' {headings} view>
   <h3 id='activities'>Github Activities</h3>
   <p>
     <Image
@@ -45,6 +46,15 @@ const headings = [
           { type: 'site', href: 'https://clipboard.zinc233.top' },
         ]
       }
+    ]}
+  />
+
+  <h2 id='sponsorship'>捐赠</h2>
+  <p>感谢大佬的捐赠🙇</p>
+    <Sponsorship
+    methods={[
+      { name: 'WeChat', icon: 'wechat-pay', image: wechat },
+      { name: 'Alipay', icon: 'alipay', image: alipay }
     ]}
   />
 

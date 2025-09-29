@@ -39,5 +39,6 @@ ignore.*
 bunfig.toml
 /src/content/blog/test.*
 /test/
+.vscode
 
 run.fish
