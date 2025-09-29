@@ -11,10 +11,10 @@ language: 'Chinese'
 ---
 
 
-## 问题
-在做课设时写大语言模型流式输出的API时，发现本地测试、服务器使用`ip:port`访问均正常。但使用域名访问时，不会流式输出，而是到最后整段话一起输出。
+## 问题描述
+在做课设写大语言模型流式输出的API时，发现本地测试、服务器使用`ip:port`访问均正常。但使用域名访问时，不会流式输出，而是到最后整段话一起输出。
 
-简简单单的Python代码：
+简简单单的流式输出Python代码：
 ``` python
 @app.post("/ask-stream-chat")
 async def ask_stream_chat(req: StreamQueryRequest):
@@ -44,7 +44,7 @@ async def ask_stream_chat(req: StreamQueryRequest):
 
 ## 解决方法
 
-总而言之，在Nginx配置中添加以下代码:
+总而言之，在对应的Nginx配置中添加以下代码即可解决问题:
 
 ``` nginx
 location ^~ / {
@@ -54,14 +54,20 @@ location ^~ / {
 
 ### 具体操作
 
-1. 进入网站管理面板
+1. 进入网站管理面板，并进入文件打开这个网站的配置文件夹 `/opt/1panel/www/sites/xxx/index`
 
-2. 进入文件管理页面
+![入口](./1.webp)
 
-3. 追加
+2. 在此基础上导航至 `../proxy/root.conf`，即 `/opt/1panel/www/sites/xxx/proxy/root.conf`
+
+![目标文件](./2.webp)
 
 
-最终配置的完整配置如下：
+3. 在这个配置文件追加几行配置
+![配置文件](./3.webp)
+
+
+最终完整的配置如下：
 ``` nginx
 location ^~ / {
     proxy_pass http://127.0.0.1:8081;
