@@ -68,7 +68,7 @@ location ^~ / {
 
 
 最终完整的配置如下：
-``` nginx
+``` nginx title="/opt/1panel/www/sites/xxx/proxy/root.conf"
 location ^~ / {
     proxy_pass http://127.0.0.1:8081;
     proxy_set_header Host $host;
@@ -87,8 +87,7 @@ location ^~ / {
     add_header Cache-Control no-cache;
     add_header Strict-Transport-Security "max-age=31536000";
     
-    // [\!code highlight:2]
-    proxy_buffering off;       # 必须关闭缓冲
-    proxy_read_timeout 300s;   # 延长读取超时
+    proxy_buffering off;       # 必须关闭缓冲 # [!code ++]
+    proxy_read_timeout 300s;   # 延长读取超时 # [!code ++]
 }
 ```
