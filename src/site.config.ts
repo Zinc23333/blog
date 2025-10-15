@@ -153,7 +153,7 @@ export const integ: IntegrationUserConfig = {
   },
   // Comment system
   waline: {
-    enable: true,
+    enable: false,
     // Server service link
     server: 'https://waline.service.zinc233.top/',
     // server: 'https://astro-theme-pure-waline.arthals.ink/',
