@@ -15,9 +15,9 @@ back: '/terms/list'
 
 <p>1. <b>Introduction</b></p>
 
-<p>Welcome to <b> Zinc</b>.</p>
+<p>Welcome to <b> Zinc233</b>.</p>
 
-<p><b>Zinc</b> (“us”, “we”, or “our”) operates <b>zinc233.top</b> (hereinafter referred to as <b>“Service”</b>).</p>
+<p><b>Zinc233</b> (“us”, “we”, or “our”) operates <b>zinc233.top</b> (hereinafter referred to as <b>“Service”</b>).</p>
 
 <p>Our Privacy Policy governs your visit to <b>zinc233.top</b>, and explains how we collect, safeguard and disclose information that results from your use of our Service.</p>
 
@@ -27,7 +27,7 @@ back: '/terms/list'
 
 <p>2. <b>Definitions</b></p>
 
-<p><b>SERVICE</b> means the zinc233.top website operated by Zinc.</p>
+<p><b>SERVICE</b> means the zinc233.top website operated by Zinc233.</p>
 
 <p><b>PERSONAL DATA</b> means data about a living individual who can be identified from those data (or from those and other information either in our possession or likely to come into our possession).</p> 
 
@@ -97,7 +97,7 @@ back: '/terms/list'
 
 <p>5. <b>Use of Data</b></p>
 
-<p>Zinc uses the collected data for various purposes:</p>
+<p>Zinc233 uses the collected data for various purposes:</p>
 
 <p>0.1. to provide and maintain our Service;</p>
 
@@ -138,7 +138,7 @@ back: '/terms/list'
 
 <p>Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.</p>
 
-<p>Zinc will take all the steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organisation or a country unless there are adequate controls in place including the security of your data and other personal information.</p>
+<p>Zinc233 will take all the steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organisation or a country unless there are adequate controls in place including the security of your data and other personal information.</p>
 
 <p>8. <b>Disclosure of Data</b></p>
 

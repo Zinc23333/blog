@@ -11,8 +11,8 @@ back: '/terms/list'
 <h2 style="text-align: center;"><b>TERMS AND CONDITIONS</b></h2>	 	 
 <p>Last updated: 2025-09-28</p>	 	 
 <p>1. <b>Introduction</b></p>	 	 
-<p>Welcome to <b>Zinc</b> (“Company”, “we”, “our”, “us”)!</p>	 	 
-<p>These Terms of Service (“Terms”, “Terms of Service”) govern your use of our website located at <b>zinc233.top</b> (together or individually “Service”) operated by <b>Zinc</b>.</p>	 	 
+<p>Welcome to <b>Zinc233</b> (“Company”, “we”, “our”, “us”)!</p>	 	 
+<p>These Terms of Service (“Terms”, “Terms of Service”) govern your use of our website located at <b>zinc233.top</b> (together or individually “Service”) operated by <b>Zinc233</b>.</p>	 	 
 <p>Our Privacy Policy also governs your use of our Service and explains how we collect, safeguard and disclose information that results from your use of our web pages.</p>	 	 
 <p>Your agreement with us includes these Terms and our Privacy Policy (“Agreements”). You acknowledge that you have read and understood Agreements, and agree to be bound of them.</p>	 	 
 <p>If you do not agree with (or cannot comply with) Agreements, then you may not use the Service, but please let us know by emailing at <b>me@zinc233.top</b> so we can try to find a solution. These Terms apply to all visitors, users and others who wish to access or use Service.</p>	 	 
@@ -23,7 +23,7 @@ back: '/terms/list'
 <p>Any contests, sweepstakes or other promotions (collectively, “Promotions”) made available through Service may be governed by rules that are separate from these Terms of Service. If you participate in any Promotions, please review the applicable rules as well as our Privacy Policy. If the rules for a Promotion conflict with these Terms of Service, Promotion rules will apply.</p>
 	 
  	
-<p>4. <b>Content</b></p><p>Content found on or through this Service are the property of Zinc or used with permission. You may not distribute, modify, transmit, reuse, download, repost, copy, or use said Content, whether in whole or in part, for commercial purposes or for personal gain, without express advance written permission from us.</p>  	 
+<p>4. <b>Content</b></p><p>Content found on or through this Service are the property of Zinc233 or used with permission. You may not distribute, modify, transmit, reuse, download, repost, copy, or use said Content, whether in whole or in part, for commercial purposes or for personal gain, without express advance written permission from us.</p>  	 
 <p>5. <b>Prohibited Uses</b></p>	 	 
 <p>You may use Service only for lawful purposes and in accordance with Terms. You agree not to use Service:</p>	 	 
 <p>0.1. In any way that violates any applicable national or international law or regulation.</p>	 	 
@@ -48,7 +48,7 @@ back: '/terms/list'
 <p>Service is intended only for access and use by individuals at least eighteen (18) years old. By accessing or using Service, you warrant and represent that you are at least eighteen (18) years of age and with the full authority, right, and capacity to enter into this agreement and abide by all of the terms and conditions of Terms. If you are not at least eighteen (18) years old, you are prohibited from both the access and usage of Service.</p>
  	 
 <p>8. <b>Intellectual Property</b></p>	 	 
-<p>Service and its original content (excluding Content provided by users), features and functionality are and will remain the exclusive property of Zinc and its licensors. Service is protected by copyright, trademark, and other laws of  and foreign countries. Our trademarks may not be used in connection with any product or service without the prior written consent of Zinc.</p>	 	 
+<p>Service and its original content (excluding Content provided by users), features and functionality are and will remain the exclusive property of Zinc233 and its licensors. Service is protected by copyright, trademark, and other laws of  and foreign countries. Our trademarks may not be used in connection with any product or service without the prior written consent of Zinc233.</p>	 	 
 <p>9. <b>Copyright Policy</b></p>	 	 
 <p>We respect the intellectual property rights of others. It is our policy to respond to any claim that Content posted on Service infringes on the copyright or other intellectual property rights (“Infringement”) of any person or entity.</p>	 	 
 <p>If you are a copyright owner, or authorized on behalf of one, and you believe that the copyrighted work has been copied in a way that constitutes copyright infringement, please submit your claim via email to me@zinc233.top, with the subject line: “Copyright Infringement” and include in your claim a detailed description of the alleged Infringement as detailed below, under “DMCA Notice and Procedure for Copyright Infringement Claims”</p>	 	 
@@ -65,8 +65,8 @@ back: '/terms/list'
 <p>11. <b>Error Reporting and Feedback</b></p>	 	 
 <p>You may provide us either directly at me@zinc233.top or via third party sites and tools with information and feedback concerning errors, suggestions for improvements, ideas, problems, complaints, and other matters related to our Service (“Feedback”). You acknowledge and agree that: (i) you shall not retain, acquire or assert any intellectual property right or other right, title or interest in or to the Feedback; (ii) Company may have development ideas similar to the Feedback; (iii) Feedback does not contain confidential information or proprietary information from you or any third party; and (iv) Company is not under any obligation of confidentiality with respect to the Feedback. In the event the transfer of the ownership to the Feedback is not possible due to applicable mandatory laws, you grant Company and its affiliates an exclusive, transferable, irrevocable, free-of-charge, sub-licensable, unlimited and perpetual right to use (including copy, modify, create derivative works, publish, distribute and commercialize) Feedback in any manner and for any purpose.</p>	 	 
 <p>12. <b>Links To Other Web Sites</b></p>	 	 
-<p>Our Service may contain links to third party web sites or services that are not owned or controlled by Zinc.</p>	 	 
-<p>Zinc has no control over, and assumes no responsibility for the content, privacy policies, or practices of any third party web sites or services. We do not warrant the offerings of any of these entities/individuals or their websites.</p>	 	 
+<p>Our Service may contain links to third party web sites or services that are not owned or controlled by Zinc233.</p>	 	 
+<p>Zinc233 has no control over, and assumes no responsibility for the content, privacy policies, or practices of any third party web sites or services. We do not warrant the offerings of any of these entities/individuals or their websites.</p>	 	 
 <p>For example, the outlined <a href="https://policymaker.io/terms-and-conditions/">Terms of Use</a> have been created using <a href="https://policymaker.io/">PolicyMaker.io</a>, a free web application for generating high-quality legal documents. PolicyMaker’s <a href="https://policymaker.io/terms-and-conditions/">Terms and Conditions generator</a> is an easy-to-use free tool for creating an excellent standard Terms of Service template for a website, blog, e-commerce store or app.</p>	 	 
 <p>YOU ACKNOWLEDGE AND AGREE THAT COMPANY SHALL NOT BE RESPONSIBLE OR LIABLE, DIRECTLY OR INDIRECTLY, FOR ANY DAMAGE OR LOSS CAUSED OR ALLEGED TO BE CAUSED BY OR IN CONNECTION WITH USE OF OR RELIANCE ON ANY SUCH CONTENT, GOODS OR SERVICES AVAILABLE ON OR THROUGH ANY SUCH THIRD PARTY WEB SITES OR SERVICES.</p>	 	 
 <p>WE STRONGLY ADVISE YOU TO READ THE TERMS OF SERVICE AND PRIVACY POLICIES OF ANY THIRD PARTY WEB SITES OR SERVICES THAT YOU VISIT.</p>	 	 
