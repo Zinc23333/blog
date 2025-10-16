@@ -153,7 +153,7 @@ export const integ: IntegrationUserConfig = {
   },
   // Comment system
   waline: {
-    enable: false,
+    enable: true,
     // Server service link
     server: 'https://waline.service.zinc233.top/',
     // server: 'https://astro-theme-pure-waline.arthals.ink/',
@@ -163,10 +163,10 @@ export const integ: IntegrationUserConfig = {
     additionalConfigs: {
       // search: false,
       pageview: true,
-      comment: false,
+      comment: true,
       locale: {
-        reaction0: 'Like',
-        placeholder: 'Welcome to comment. (Email to receive replies. Login is unnecessary)'
+        reaction0: '赞',
+        placeholder: '欢迎评论(填写邮箱来接收回复，无需登陆)'
       },
       imageUploader: false
     }
