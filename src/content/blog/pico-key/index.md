@@ -63,6 +63,10 @@ language: 'Chinese'
 
 完成登陆
 
+## 外壳
+
+如果需要外壳，可以参考这个项目: [Picokey Case RP2350/RP2040 DIY Yubikey Passkey](https://www.printables.com/model/1373168-picokey-case-rp2350rp2040-diy-yubikey-passkey/files)
+
 
 ## 参考
 1. [32元制作一个超好玩的物理安全密钥Pico Keys](https://www.5yyx.com/?p=399)
