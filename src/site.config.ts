@@ -3,7 +3,7 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Zinc233\'s Blog | 技术分享与踩坑记录',
+  title: 'Zinc233\'s Blog',
   /** Will be used in index page & copyright declaration */
   author: 'Zinc233',
   /** Description metadata for your website. Can be used in page metadata. */
@@ -65,6 +65,11 @@ export const theme: ThemeUserConfig = {
       {
         title: '苏ICP备2025209618号-1',
         link: 'https://beian.miit.gov.cn',
+        style: 'text-sm' // Uno/TW CSS class
+      },
+      {
+        title: '萌ICP备20255996号',
+        link: 'https://icp.gov.moe/?keyword=20255996',
         style: 'text-sm' // Uno/TW CSS class
       },
       // {
