@@ -1,14 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch’s name
   push:
     branches: [ main ]
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
-# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
@@ -20,14 +16,38 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
-        uses: withastro/action@v3
-        # with:
-          # path: . # The root location of your Astro project inside the repository. (optional)
-          # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
-          # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
-        # env:
-          # PUBLIC_POKEAPI: 'https://pokeapi.co/api/v2' # Use single quotation marks for the variable value. (optional)
+
+      # 1. 配置 Bun 环境
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      # 2. 安装依赖 (使用 bun install)
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      # 3. 构建 Astro 网站
+      # Astro 默认输出目录为 ./dist
+      - name: Build Astro site
+        run: bun run build
+
+      # 4. 生成贪吃蛇并放入 dist 目录
+      # 关键点：outputs 必须指向 dist/ 目录，这样才能和网页文件合并
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9&color_background=#aaaaaa
+
+      # 5. 上传最终的 Artifact (包含网站和贪吃蛇)
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
 
   deploy:
     needs: build
