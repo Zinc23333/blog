@@ -42,3 +42,4 @@ bunfig.toml
 .vscode
 
 run.fish
+runIndexNow.fish
