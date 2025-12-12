@@ -1,0 +1,78 @@
+---
+title: CDN 大接力——CDN套CDN套CDN套CDN
+publishDate: 2025-12-12
+description: 用CDN套CDN套CDN套CDN
+tags:
+  - Play
+  - CDN
+language: 'Chinese'
+---
+
+## 起因
+一般情况下，国内访问 Vercel 时候会比较慢，会套一层 Cloudflare 的 Proxy 实现站点加速。但是 Vercel 也有自己的 CDN，此时就已经有了两层 CDN 了。那么再继续往上面套 CDN 似乎也没什么大问题。当然了，这个主要是为了好玩。
+
+每经过一层 CDN ，CDN 就会增加一个 header，通过分析 header 就可以知道经过了哪些 CDN。
+
+## 配置
+源站点在 Github Page 上，是一个简单的分析 header 经过了哪些 CDN 的站点。
+
+路由如下:
+
+```
+[用户请求](https://what-cdn.zinc233.top)
+  ↓ 
+Cloudflare Proxy
+  ↓ 
+阿里云 ESA
+  ↓ 
+腾讯云 EO
+  ↓ http
+七牛云
+  ↓ https
+[Vercel](https://what-cdn.vercel.app)
+  ↓ 
+Fastly
+  ↓ 
+[Github Page](https://zinc23333.github.io/what-cdn/)
+  
+```
+
+其中，
+- Vercel 只支持 https 连接，因此七牛云使用 https 回 Vercel 源
+- 七牛云没有免费的 SSL 证书，因此上游 EO 使用 http 回 七牛云 源
+- Vercel 是通过中间件实现的回源，并不能直接当 CDN 用
+
+这样就实现了 CDN 的大接力 :D
+
+## 配置
+- 所有中间层的主机记录都是 `要访问的地址` (本文中是 what-cdn.zinc233.top)
+- 源站地址为上一层 CDN 的 CNAME
+- 全部使用 `要访问的地址` 作为回源地址
+
+| 服务商 | 源站地址 | 备注 |
+| --- | --- | --- |
+| Cloudflare | what-cdn.zinc233.top.a1.initba.com (阿里云 ESA) | 开启 Proxy |
+| 阿里云 | what-cdn.zinc233.top.eo.dnse1.com (腾讯云 EO) | |
+| 腾讯云 | what-cdn-zinc233-top-idvquke.qiniudns.com (七牛云) | |
+| 七牛云 | 70e8ad480a432d2a.vercel-dns-017.com (Vercel) | |
+| Vercel | zinc23333.github.io/what-cdn/ | 使用中间件回源 |
+
+其中，阿里云 ESA 、腾讯云 EO 在这么配置完后均检测不到 CNAME 配置，但路由正常。
+
+项目地址：
+
+
+import ProjectSection from '@/components/projects/ProjectSection.astro'
+
+<ProjectSection
+    projects={[
+      {
+        name: 'what-cdn',
+        description: '分析一个网页经过了哪些 CDN',
+        links: [
+          { type: 'github', href: 'https://github.com/Zinc23333/what-cdn' },
+          { type: 'site', href: 'https://what-cdn.zinc233.top' },
+        ]
+      },
+    ]}
+  />
